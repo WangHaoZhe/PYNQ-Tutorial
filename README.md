@@ -145,4 +145,8 @@ Ctrl+S保存, 弹出警告页面, 选择OK即可. 保存约束文件页面选择
 
 ![28.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/28.jpg)
 
-点击左侧边栏Program Device, 选择XILINX芯片进行烧录. 烧录完成后程序自动运行.
+点击左侧边栏Program Device, 选择XILINX芯片进行烧录. 默认配置. 点击Program.
+
+![29.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/29.jpg)
+
+烧录完成后程序自动运行.
