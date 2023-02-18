@@ -1,0 +1,83 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7z020clg400-1",
+      "gen_directory": "../../../../Tutorial.gen/sources_1/bd/half_adder",
+      "name": "half_adder",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "Add_half_0": ""
+    },
+    "ports": {
+      "LED0": {
+        "direction": "O"
+      },
+      "LED1": {
+        "direction": "O"
+      },
+      "SW0": {
+        "direction": "I"
+      },
+      "SW1": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Add_half_0": {
+        "vlnv": "xilinx.com:module_ref:Add_half:1.0",
+        "xci_name": "half_adder_Add_half_0_0",
+        "xci_path": "ip\\half_adder_Add_half_0_0\\half_adder_Add_half_0_0.xci",
+        "inst_hier_path": "Add_half_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Add_half",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sum": {
+            "direction": "O"
+          },
+          "c_out": {
+            "direction": "O"
+          },
+          "a": {
+            "direction": "I"
+          },
+          "b": {
+            "direction": "I"
+          }
+        }
+      }
+    },
+    "nets": {
+      "Add_half_0_c_out": {
+        "ports": [
+          "Add_half_0/c_out",
+          "LED1"
+        ]
+      },
+      "Add_half_0_sum": {
+        "ports": [
+          "Add_half_0/sum",
+          "LED0"
+        ]
+      },
+      "SW0_1": {
+        "ports": [
+          "SW0",
+          "Add_half_0/a"
+        ]
+      },
+      "SW1_1": {
+        "ports": [
+          "SW1",
+          "Add_half_0/b"
+        ]
+      }
+    }
+  }
+}

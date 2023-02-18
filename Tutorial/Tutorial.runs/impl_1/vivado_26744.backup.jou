@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Feb 18 00:29:21 2023
+# Process ID: 26744
+# Current directory: E:/Projects/Tutorial/Tutorial.runs/impl_1
+# Command line: vivado.exe -log Add_half.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Add_half.tcl -notrace
+# Log file: E:/Projects/Tutorial/Tutorial.runs/impl_1/Add_half.vdi
+# Journal file: E:/Projects/Tutorial/Tutorial.runs/impl_1\vivado.jou
+# Running On: Albert-G14, OS: Windows, CPU Frequency: 2895 MHz, CPU Physical cores: 16, Host memory: 16556 MB
+#-----------------------------------------------------------
+source Add_half.tcl -notrace

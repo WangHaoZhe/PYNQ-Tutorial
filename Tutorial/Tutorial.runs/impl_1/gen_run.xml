@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z020clg400-1" LaunchTime="1676651350">
+  <File Type="ROUTE-PWR" Name="Add_half_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Add_half.tcl"/>
+  <File Type="BITSTR-MMI" Name="Add_half.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Add_half_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Add_half_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Add_half_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Add_half_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="Add_half_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Add_half_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Add_half_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Add_half.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Add_half_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Add_half_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Add_half_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Add_half_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Add_half_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Add_half_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Add_half_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Add_half_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Add_half_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Add_half_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Add_half_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Add_half.bin"/>
+  <File Type="PLACE-TIMING" Name="Add_half_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Add_half_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Add_half.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Add_half_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Add_half_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Add_half_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="Add_half.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="Add_half_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Add_half_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Add_half_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Add_half_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Add_half_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Add_half_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Add_half_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Add_half_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Add_half_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Add_half_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Add_half_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Add_half_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Add_half_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Add_half_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Add_half_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Add_half_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Add_half_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Add_half_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Add_half_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Add_half_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Add_half_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Add_half_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Add_half_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Add_half_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Add_half_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Add_half_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Add_half_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Add_half.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Add_half_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Add_half_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Add_half.nky"/>
+  <File Type="BITSTR-BMM" Name="Add_half_bd.bmm"/>
+  <File Type="PDI-FILE" Name="Add_half.pdi"/>
+  <File Type="RCFI_FILE" Name="Add_half.rcfi"/>
+  <File Type="CFI_FILE" Name="Add_half.cfi"/>
+  <File Type="RNPI_FILE" Name="Add_half.rnpi"/>
+  <File Type="NPI_FILE" Name="Add_half.npi"/>
+  <File Type="RBD_FILE" Name="Add_half.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Add_half.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Add_half.sysdef"/>
+  <File Type="BG-BGN" Name="Add_half.bgn"/>
+  <File Type="BG-DRC" Name="Add_half.drc"/>
+  <File Type="RDI-RDI" Name="Add_half.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="ROUTE-RQS" Name="Add_half_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="Add_half_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/half_adder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/half_adder/half_adder.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Add_half"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/new/half_adder.v"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/pynq-z2_v1.0.xdc/PYNQ-Z2 v1.0.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="C:/Users/ABC/Desktop/pynq-z2_v1.0.xdc/PYNQ-Z2 v1.0.xdc"/>
+        <Attr Name="ImportTime" Val="1676633842"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/pynq-z2_v1.0.xdc/PYNQ-Z2 v1.0.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/Add_half.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
