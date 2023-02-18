@@ -1,8 +1,7 @@
 # 基于PYNQ Z2开发板与Vivado 2022.2的FPGA开发板使用教程
 
 ## 0. PYNQ Z2配置
-见官方文档: https://pynq.readthedocs.io/en/latest/getting_started/pynq_z2_setup.html  
-注:无需网络. SD卡系统镜像文件在http://www.pynq.io/board.html下载, 使用Win32DiskImager烧录即可.
+仅需要将Micro-USB插入电脑USB端口, 注意电源跳线帽要处于USB位置. 无需插入SD卡与网线等.
 
 ## 1. Vivado下载与安装
 
