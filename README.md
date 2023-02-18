@@ -127,7 +127,17 @@ endmodule
 
 ![23.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/23.jpg)
 
-进入I/O Ports菜单, 根据User Manual第20页所示的引脚定义配置. 此处以input为两个开关, output为单色LED为例.
+进入I/O Ports菜单, 根据User Manual第20页所示的引脚定义配置. 此处以input为两个开关, output为单色LED为例.  
+I/O Std参考约束文件13,14,27,28行
+```Verilog
+#set_property -dict { PACKAGE_PIN M20   IOSTANDARD LVCMOS33 } [get_ports { sw[0] }]; #IO_L7N_T1_AD2N_35 Sch=sw[0]
+#set_property -dict { PACKAGE_PIN M19   IOSTANDARD LVCMOS33 } [get_ports { sw[1] }]; #IO_L7P_T1_AD2P_35 Sch=sw[1]
+...
+#set_property -dict { PACKAGE_PIN R14   IOSTANDARD LVCMOS33 } [get_ports { led[0] }]; #IO_L6N_T0_VREF_34 Sch=led[0]
+#set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33 } [get_ports { led[1] }]; #IO_L6P_T0_34 Sch=led[1]
+```
+
+修改为LVCMOS33.
 
 ![24.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/24.jpg)
 ![25.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/25.jpg)
