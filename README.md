@@ -1,7 +1,9 @@
 # 基于PYNQ Z2开发板与Vivado 2022.2的FPGA开发板使用教程
 
 ## 0. PYNQ Z2配置
-仅需要将Micro-USB插入电脑USB端口, 注意电源跳线帽要处于USB位置. 无需插入SD卡与网线等.
+
+见官方文档: https://pynq.readthedocs.io/en/latest/getting_started/pynq_z2_setup.html  
+SD卡系统镜像文件在http://www.pynq.io/board.html下载, 使用Win32DiskImager烧录即可.
 
 ## 1. Vivado下载与安装
 
@@ -89,6 +91,7 @@ Add Constriants中选择左上角蓝色+, 点击Add files. 选择上一步下载
 ![14.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/14.jpg)
 
 进入half_adder.v, 粘贴以下代码并保存(Ctrl+S):
+
 ```Verilog
 module Add_half (sum, c_out, a, b);
     input a, b;
@@ -129,6 +132,7 @@ endmodule
 
 进入I/O Ports菜单, 根据User Manual第20页所示的引脚定义配置. 此处以input为两个开关, output为单色LED为例.  
 I/O Std参考约束文件13,14,27,28行
+
 ```Verilog
 #set_property -dict { PACKAGE_PIN M20   IOSTANDARD LVCMOS33 } [get_ports { sw[0] }]; #IO_L7N_T1_AD2N_35 Sch=sw[0]
 #set_property -dict { PACKAGE_PIN M19   IOSTANDARD LVCMOS33 } [get_ports { sw[1] }]; #IO_L7P_T1_AD2P_35 Sch=sw[1]
@@ -156,7 +160,52 @@ Ctrl+S保存, 弹出警告页面, 选择OK即可. 保存约束文件页面选择
 ![28.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/28.jpg)
 
 点击左侧边栏Program Device, 选择XILINX芯片进行烧录. 默认配置. 点击Program.
-
+  
 ![29.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/29.jpg)
 
 烧录完成后程序自动运行.
+
+## 7. 保存至SD卡并运行
+
+上一步中通过Vivado进行烧录的方法并不能在开发板中永久保存你的代码. 下面的方法可以永久保存代码并运行代码.
+
+**连接网络**
+
+将网线插入开发板与电脑(可以使用USB转RJ45转接线连接)并开机. 开机后在电脑控制面板-网络和 Internet-网络连接, 右键网口所在的网络适配器, 选择属性.
+
+![30.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/30.jpg)
+
+在IPv4中配置IP地址为192.168.2.x(x表示任选), 子网掩码为255.255.255.0, 点击确定.
+
+![31.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/31.jpg)
+
+打开电脑浏览器, 地址栏输入192.168.2.99:9090, 进入jupyter notebooks. 默认密码为xilinx
+
+![32.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/32.jpg)
+
+打开电脑文件资源管理器, 地址栏输入\\\pynq, 密码与用户名均为xilinx. 进入\xilinx\jupyter_notebooks并新建文件夹, 名称任意.
+
+![33.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/33.jpg)
+
+**导入Bitstream**
+
+进入Tutorial.runs\impl_1, 将.bit文件拷贝至上一步新建的文件夹中.
+
+![34.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/34.jpg)
+
+返回浏览器, 进入上一步新建的文件夹, 点击New-Python3, 复制下面的代码:
+
+```Python
+from pynq import Bitstream
+
+bit = Bitstream("Add_half.bit") # No overlay Tcl file required
+
+bit.download()
+
+bit.bitfile_name
+```
+
+![35.jpg](https://github.com/WangHaoZhe/PYNQ-Tutorial/blob/main/Resource/35.jpg)
+
+其中Add_half.bit为你的Bitstream文件名. 保存, 点击运行, 等待开发板载入代码. 载入代码后jupyter notebooks进入不可用状态, 无法再进行控制. 若想停止代码运行并恢复jupyter notebooks, 点按开发板上的SRST并等待重启即可.  
+之后每次重新上电, 运行该notebook即可, 无需重新烧录代码.
